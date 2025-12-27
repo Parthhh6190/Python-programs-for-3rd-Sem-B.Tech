@@ -1,171 +1,171 @@
-# --------------------->Programs for 3rd sem Python exam <-------------------
+--------------------->Programs for 3rd sem Python exam <-------------------
 
-# --------------------> 1st Program - See if a year is leap year or not <-------------------------
+--------------------> 1st Program - See if a year is leap year or not <-------------------------
 
-# # LOGIC --> A year is leap year if its divisble by 400 or Divisible by 4 and not 100
-# year = int(input("Type a year you want to check if its leap year or not \n"))
-# if (year%400 == 0 or year%4 == 0 and year%100 != 0):
-#     print(year, "is a leap year")
-# else:
-#     print(year, "is not a leap year")
+# LOGIC --> A year is leap year if its divisble by 400 or Divisible by 4 and not 100
+year = int(input("Type a year you want to check if its leap year or not \n"))
+if (year%400 == 0 or year%4 == 0 and year%100 != 0):
+    print(year, "is a leap year")
+else:
+    print(year, "is not a leap year")
 
-# --------------------> 2nd Program - A program to see if a number is armstrong or not <-------------------------
+--------------------> 2nd Program - A program to see if a number is armstrong or not <-------------------------
 
-# num = int(input("Type a number: \n"))
-# digits = len(str(num))
-# temp = num
-# sum=0
-# while(temp>0):
-#     digit = temp%10
-#     sum = sum + digit ** digits
-#     temp = temp//10
+num = int(input("Type a number: \n"))
+digits = len(str(num))
+temp = num
+sum=0
+while(temp>0):
+    digit = temp%10
+    sum = sum + digit ** digits
+    temp = temp//10
 
-# if sum == num:
-#     print(num, "is an armstrong number")
-# else:
-#     print(num, "num is not an arm strong number")
+if sum == num:
+    print(num, "is an armstrong number")
+else:
+    print(num, "num is not an arm strong number")
 
-# --------------------> 3rd Program - A program to see if a number is palindrome or not <-------------------------
+--------------------> 3rd Program - A program to see if a number is palindrome or not <-------------------------
 
-# num = int(input("Type a number: \n"))
-# digits = len(str(num))
-# temp = num
-# rev=0
-# while(temp>0):
-#     digit = temp%10
-#     rev = rev*10 + digit
-#     temp = temp//10
+num = int(input("Type a number: \n"))
+digits = len(str(num))
+temp = num
+rev=0
+while(temp>0):
+    digit = temp%10
+    rev = rev*10 + digit
+    temp = temp//10
 
-# if rev == num:
-#     print(num, "is an palindrome number")
-# else:
-#     print(num, "is not an palindrome number")
+if rev == num:
+    print(num, "is an palindrome number")
+else:
+    print(num, "is not an palindrome number")
 
-# --------------------> 4th Program - A program to see fibonnaci series upto n terms <-------------------------
+--------------------> 4th Program - A program to see fibonnaci series upto n terms <-------------------------
 
-# def fibonnaci(num):
-#     if num==0: 
-#         return 0
-#     elif num ==1:
-#         return 1
-#     else: 
-#         return fibonnaci(num-1) + fibonnaci(num-2)
+def fibonnaci(num):
+    if num==0: 
+        return 0
+    elif num ==1:
+        return 1
+    else: 
+        return fibonnaci(num-1) + fibonnaci(num-2)
     
-# n = int(input("Enter the number of terms for the finonacci series \n"))
-# print("The fibonacci series upto", n, "terms is: ")
-# for i in range(n):
-#     print(fibonnaci(i), end=" ")
+n = int(input("Enter the number of terms for the finonacci series \n"))
+print("The fibonacci series upto", n, "terms is: ")
+for i in range(n):
+    print(fibonnaci(i), end=" ")
 
-# --------------------> 5th Program - A program to find the factorial of a number <-------------------------
+--------------------> 5th Program - A program to find the factorial of a number <-------------------------
 
-# def factorial(num):
-#     if num==0:
-#         return 1
-#     elif num==1:
-#         return 1
-#     else:
-#         return num*factorial(num-1)
+def factorial(num):
+    if num==0:
+        return 1
+    elif num==1:
+        return 1
+    else:
+        return num*factorial(num-1)
     
-# num = int(input("Enter a number to find its factorial: "))
-# print("The factorial of", num, "is", factorial(num))
+num = int(input("Enter a number to find its factorial: "))
+print("The factorial of", num, "is", factorial(num))
 
-# --------------------> 6th Program - A program to find whether a number is prime or not <-------------------------
+--------------------> 6th Program - A program to find whether a number is prime or not <-------------------------
 
-# def primenumber(num):
-#    if num==0 or num==1:
-#     print(num, "is not a prime number")
-#     return 
-#    isprime = True
-#    for i in range (2, int(num**0.5) + 1):
-#         if num % i == 0:
-#          isprime = False
-#          break
-#    if isprime:
-#     print(num, "is a prime number")
-#    else:
-#       print(num, "is not a prime number")
+def primenumber(num):
+   if num==0 or num==1:
+    print(num, "is not a prime number")
+    return 
+   isprime = True
+   for i in range (2, int(num**0.5) + 1):
+        if num % i == 0:
+         isprime = False
+         break
+   if isprime:
+    print(num, "is a prime number")
+   else:
+      print(num, "is not a prime number")
 
-# num = int(input("Enter a number to find if its prime or not: "))
-# primenumber(num)
+num = int(input("Enter a number to find if its prime or not: "))
+primenumber(num)
 
-# --------------------> 7th Program - Pattern increasing stars downwards(Pyramid) <-------------------------
+--------------------> 7th Program - Pattern increasing stars downwards(Pyramid) <-------------------------
 
-# num = int(input("Enter a number for the star pattern: "))
-# for i in range (1, num+1):
-#     for j in range(i):
-#         print("*", end=" ")
-#     print("\n")     
+num = int(input("Enter a number for the star pattern: "))
+for i in range (1, num+1):
+    for j in range(i):
+        print("*", end=" ")
+    print("\n")     
 
-# --------------------> 8th Program - Pattern decreasing stars downwards(Pyramid) <-------------------------
+--------------------> 8th Program - Pattern decreasing stars downwards(Pyramid) <-------------------------
 
-# num = int(input("Enter a number for the star pattern: "))
-# for i in range (num, 0, -1):
-#     for j in range(i):
-#         print("*", end=" ")
-#     print("\n")  
+num = int(input("Enter a number for the star pattern: "))
+for i in range (num, 0, -1):
+    for j in range(i):
+        print("*", end=" ")
+    print("\n")  
 
-# --------------------> 9th Program - Prime number in a range <-------------------------
+--------------------> 9th Program - Prime number in a range <-------------------------
 
-# start = int(input("Enter the starting number: "))
-# end = int(input("Enter the ending number: "))
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
 
-# print("Prime numbers between", start, "and", end, "are:")
+print("Prime numbers between", start, "and", end, "are:")
 
-# for num in range(start, end + 1):
-#     if num <= 1:
-#         continue  # skip 0 and 1
-#     isprime = True
-#     for i in range(2, int(num**0.5) + 1):
-#         if num % i == 0:
-#             isprime = False
-#             break
-#     if isprime:
-#         print(num, end=" ")
+for num in range(start, end + 1):
+    if num <= 1:
+        continue  # skip 0 and 1
+    isprime = True
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            isprime = False
+            break
+    if isprime:
+        print(num, end=" ")
 
-# --------------------> 10th Program - A program to check whether a number is from the fibonacci series or not <-------------------------
+--------------------> 10th Program - A program to check whether a number is from the fibonacci series or not <-------------------------
 
-# num = int(input("Enter a number to check if it's in the Fibonacci series: "))
+num = int(input("Enter a number to check if it's in the Fibonacci series: "))
 
-# a, b = 0, 1
-# found = False
+a, b = 0, 1
+found = False
 
-# while a <= num:
-#     if a == num:
-#         found = True
-#         break
-#     c = a + b
-#     a = b
-#     b = c
+while a <= num:
+    if a == num:
+        found = True
+        break
+    c = a + b
+    a = b
+    b = c
 
-# if found:
-#     print(num, "is in the Fibonacci series")
-# else:
-#     print(num, "is not in the Fibonacci series")
+if found:
+    print(num, "is in the Fibonacci series")
+else:
+    print(num, "is not in the Fibonacci series")
 
-# --------------------> 11th Program - A program to convert time from 12 hour format to 24 hour format<-------------------------
+--------------------> 11th Program - A program to convert time from 12 hour format to 24 hour format<-------------------------
 
-# time = input("Enter the time you want to convert to 24 hours format (e.g-7:30 PM): ")
-# t, period = time.split()
-# hours, minutes = t.split(":")
-# hours=int(hours)
-# #Now we will use this logic to convert it into 24 hours format
-# if period == "PM" and hours!=12:
-#     hours=hours+12
-# elif period == "AM" and hours==12:
-#     hours=0
-# print(f"{hours:02d}:{minutes}")
+time = input("Enter the time you want to convert to 24 hours format (e.g-7:30 PM): ")
+t, period = time.split()
+hours, minutes = t.split(":")
+hours=int(hours)
+#Now we will use this logic to convert it into 24 hours format
+if period == "PM" and hours!=12:
+    hours=hours+12
+elif period == "AM" and hours==12:
+    hours=0
+print(f"{hours:02d}:{minutes}")
 
-# --------------------> 12th Program - Decorator in python<-------------------------
-# def my_decorator(func):
-#     def inner():
-#         print("Hello")
-#         func()
-#         print("Baby")
-#     return inner
-# @my_decorator
-# def func():
-#     print("Parth")
-# func()
+--------------------> 12th Program - Decorator in python<-------------------------
+def my_decorator(func):
+    def inner():
+        print("Hello")
+        func()
+        print("Baby")
+    return inner
+@my_decorator
+def func():
+    print("Parth")
+func()
 
 
 
